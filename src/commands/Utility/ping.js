@@ -2,7 +2,7 @@
 
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { colorPalette } = require("../../util/util.js");
-const { CommandInteraction, Permissions, MessageEmbed } = require("discord.js");
+const { CommandInteraction, Permissions, MessageEmbed, IntegrationApplication } = require("discord.js");
 
 module.exports.cooldown = {
     length: 5000, /* in ms */
@@ -17,9 +17,10 @@ module.exports.cooldown = {
 module.exports.run = async (interaction, utils) =>
 {
     const embed = new MessageEmbed()
-        .setAuthor("ZVRP", interaction.client.user.avatarURL({ format: "png" }))
+        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }))
         .setDescription(":ping_pong: **Pong**")
         .setColor(colorPalette.brandColor);
+
     await interaction.reply({ embeds: [embed], ephemeral: true });
 };
 
