@@ -1,0 +1,30 @@
+{
+  "name": "zvrp",
+  "version": "1.0.0",
+  "description": "ZVRP Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenshiin13/ZVRP.git"
+  },
+  "author": "Kenshin13",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kenshiin13/ZVRP/issues"
+  },
+  "homepage": "https://github.com/Kenshiin13/ZVRP#readme",
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "colors": "^1.4.0",
+    "discord-api-types": "^0.24.0",
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
