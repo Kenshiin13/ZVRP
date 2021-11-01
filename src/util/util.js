@@ -32,3 +32,15 @@ module.exports.getAllFilesSync = function getAllFilesSync(dirPath, arrayOfFiles)
 
     return arrayOfFiles;
 };
+
+/**
+ * Formats milliseconds to minutes and seconds. 298999 -> 4:59
+ * @param {Number} ms The amount of milliseconds to format.
+ * @returns Returns the formatted string.
+ */
+module.exports.msToMinAndSec = function (ms)
+{
+    var minutes = Math.floor(ms / 60000);
+    var seconds = ((ms % 60000) / 1000).toFixed(0);
+    return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
+};
