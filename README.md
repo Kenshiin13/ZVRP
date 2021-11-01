@@ -1,4 +1,6 @@
 # ZVRP Discord Bot
+Still missing something? [Suggest a feature!](https://github.com/Kenshiin13/ZVRP/issues)
+
 
 ## TODO:
 - `/regelwerk` Ein Link zum Regelwerk ♻️
