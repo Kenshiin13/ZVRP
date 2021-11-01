@@ -4,7 +4,8 @@
   "description": "ZVRP Discord Bot",
   "main": "index.js",
   "scripts": {
-    "test": "npm run server"
+    "server": "node index.js",
+    "deploy": "node ./src/deploy.js"
   },
   "repository": {
     "type": "git",
