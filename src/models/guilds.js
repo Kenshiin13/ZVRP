@@ -26,6 +26,16 @@ const guildSchema = new Schema({
     {
         type: String,
         required: false
+    },
+    joinlog:
+    {
+        type: String,
+        required: false
+    },
+    leavelog:
+    {
+        type: String,
+        required: false
     }
 }, { timestamps: true });
 
