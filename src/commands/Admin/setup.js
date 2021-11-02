@@ -50,7 +50,7 @@ module.exports.run = async (interaction, utils) =>
         }
         else
         {
-            embed.setDescription(":x: | Etwas ist schiefgelaufen.. Melde dich bitte umgehend bei meinem Developer \`Kenshin13#6666\`!`");
+            embed.setDescription(":x: | Etwas ist schiefgelaufen.. Melde dich bitte umgehend bei meinem Developer \`Kenshin13#6666\`!");
             await interaction.editReply({ embeds: [embed] });
             return Promise.reject(err);
         }
