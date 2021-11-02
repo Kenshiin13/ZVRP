@@ -2,7 +2,7 @@
 
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { colorPalette } = require("../../util/util.js");
-const { CommandInteraction, Permissions, MessageEmbed, IntegrationApplication } = require("discord.js");
+const { CommandInteraction, Permissions, MessageEmbed } = require("discord.js");
 
 module.exports.cooldown = {
     length: 5000, /* in ms */
