@@ -31,7 +31,7 @@ module.exports.run = async (interaction) =>
     /* Check if command is on cooldown. */
     if (cmdFile.cooldown.users.has(interaction.member.id))
     {
-        embed.setDescription(`:hourglass_flowing_sand: | You can only use this command every ${msToMinAndSec(cmdFile.cooldown.length)} minutes.`);
+        embed.setDescription(`:hourglass_flowing_sand: | Du kannst den Befehl nur alle ${msToMinAndSec(cmdFile.cooldown.length)} Minuten nutzen.`);
         await interaction.reply({ embeds: [embed], ephemeral: true });
         return;
     }
@@ -40,7 +40,7 @@ module.exports.run = async (interaction) =>
     const missingClientPermissions = interaction.guild.me.permissions.missing(cmdFile.permissions.clientPermissions);
     if (missingClientPermissions.length > 0)
     {
-        embed.setDescription(`:x: | I am missing the following permissions on this server to function properly:\n\`${missingClientPermissions}\``);
+        embed.setDescription(`:x: | Mir fehlen folgende Berechtigungen:\n\`${missingClientPermissions}\``);
         await interaction.reply({ embeds: [embed], ephemeral: true });
         return;
     }
@@ -49,7 +49,7 @@ module.exports.run = async (interaction) =>
     const missingUserPermissions = interaction.member.permissions.missing(cmdFile.permissions.userPermissions)
     if (missingUserPermissions.length > 0)
     {
-        embed.setDescription(`:x: | You are missing the following permissions:\n\`${missingUserPermissions}\``);
+        embed.setDescription(`:x: | Dir fehlen folgende Berechtigungen:\n\`${missingUserPermissions}\``);
         await interaction.reply({ embeds: [embed], ephemeral: true });
         return;
     }
