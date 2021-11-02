@@ -18,3 +18,5 @@ Still missing something? [Suggest a feature!](https://github.com/Kenshiin13/ZVRP
 - ♻️ In Bearbeitung
 - ✅ Abgeschlossen
 - 🚧 Wird angepasst
+
+![zvrplogo](https://user-images.githubusercontent.com/63159154/139959570-8f18fabf-6d5f-4008-baf7-59ccca487dc5.gif)
