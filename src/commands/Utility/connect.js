@@ -32,7 +32,7 @@ module.exports.run = async (interaction, utils) =>
     }
     if (!currentGuild.connect)
     {
-        embed.setDescription(":x: | Für diesen Server wurde noch kein Connect Link hinterlegt.");
+        embed.setDescription(":x: | Für diesen Server wurde noch kein Connect Link hinterlegt. Nutze `/setconnect <link>`.");
         await interaction.editReply({ embeds: [embed] });
         return;
     }

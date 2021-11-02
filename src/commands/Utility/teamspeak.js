@@ -32,7 +32,7 @@ module.exports.run = async (interaction, utils) =>
     }
     if (!currentGuild.teamspeak)
     {
-        embed.setDescription(":x: | Für diesen Server wurde noch kein TeamSpeak Server hinterlegt.");
+        embed.setDescription(":x: | Für diesen Server wurde noch kein TeamSpeak Server hinterlegt. Nutze `/setteamspeak <ip>`.");
         await interaction.editReply({ embeds: [embed] });
         return;
     }

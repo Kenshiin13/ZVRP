@@ -32,7 +32,7 @@ module.exports.run = async (interaction, utils) =>
     }
     if (!currentGuild.regelwerk)
     {
-        embed.setDescription(":x: | Für diesen Server wurde noch kein Regelwerk hinterlegt.");
+        embed.setDescription(":x: | Für diesen Server wurde noch kein Regelwerk hinterlegt. Nutze `/setregelwerk <link>`.");
         await interaction.editReply({ embeds: [embed] });
         return;
     }
