@@ -21,6 +21,11 @@ const guildSchema = new Schema({
     {
         type: String,
         required: false
+    },
+    vorschlagschannel:
+    {
+        type: String,
+        required: false
     }
 }, { timestamps: true });
 
