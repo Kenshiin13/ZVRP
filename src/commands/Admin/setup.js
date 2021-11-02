@@ -59,7 +59,7 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.SEND_MESSAGES
+    userPermissions: Permissions.FLAGS.ADMINISTRATOR
 };
 
 module.exports.data = new SlashCommandBuilder()
