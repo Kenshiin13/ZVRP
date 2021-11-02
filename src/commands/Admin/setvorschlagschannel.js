@@ -22,7 +22,7 @@ module.exports.run = async (interaction, utils) =>
     const channel = interaction.options.getChannel("textkanal", true);
 
     const embed = new MessageEmbed()
-        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }))
+        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }), "https://zero-v.de/")
         .setColor(colorPalette.brandColor);
 
     const currentGuild = await Guild.findOne({ id: interaction.guildId });

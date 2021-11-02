@@ -25,7 +25,7 @@ module.exports.run = async (interaction) =>
     else return; /* Return if command doesn't exist. */
 
     const embed = new MessageEmbed()
-        .setAuthor("Community Support Bot", interaction.client.user.avatarURL({ format: "png" }), "https://melion.cloud/")
+        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }), "https://zero-v.de/")
         .setColor(colorPalette.brandColor);
 
     /* Check if command is on cooldown. */

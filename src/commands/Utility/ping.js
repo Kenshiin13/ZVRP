@@ -17,7 +17,7 @@ module.exports.cooldown = {
 module.exports.run = async (interaction, utils) =>
 {
     const embed = new MessageEmbed()
-        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }))
+        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }), "https://zero-v.de/")
         .setDescription(":ping_pong: **Pong**")
         .setColor(colorPalette.brandColor);
 

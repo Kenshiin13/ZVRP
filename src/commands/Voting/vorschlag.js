@@ -21,7 +21,7 @@ module.exports.run = async (interaction, utils) =>
 
     const vorschlag = interaction.options.getString("vorschlag", true);
     let embed = new MessageEmbed()
-        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }))
+        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }), "https://zero-v.de/")
         .setColor(colorPalette.brandColor);
 
     const currentGuild = await Guild.findOne({ id: interaction.guildId });
@@ -56,7 +56,7 @@ module.exports.run = async (interaction, utils) =>
     await msg.react("❌");
 
     embed = new MessageEmbed()
-        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }))
+        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }), "https://zero-v.de/")
         .setColor(colorPalette.brandColor)
         .setDescription(`:white_check_mark: | [Dein Vorschlag](${msg.url}) wurde abgeschickt!`);
     await interaction.editReply({ embeds: [embed] });

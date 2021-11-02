@@ -20,7 +20,7 @@ module.exports.run = async (interaction, utils) =>
     await interaction.deferReply({ ephemeral: false });
 
     const embed = new MessageEmbed()
-        .setAuthor("Zero-V Roleplay - Connect ", interaction.client.user.avatarURL({ format: "png" }))
+        .setAuthor("Zero-V Roleplay - Connect ", interaction.client.user.avatarURL({ format: "png" }), "https://zero-v.de/")
         .setColor(colorPalette.brandColor);
 
     const currentGuild = await Guild.findOne({ id: interaction.guildId });

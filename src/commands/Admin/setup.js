@@ -24,7 +24,7 @@ module.exports.run = async (interaction, utils) =>
         connect = interaction.options.getString("connect", false);
 
     const embed = new MessageEmbed()
-        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }))
+        .setAuthor("Zero-V Roleplay", interaction.client.user.avatarURL({ format: "png" }), "https://zero-v.de/")
         .setColor(colorPalette.brandColor);
     try
     {
