@@ -12,6 +12,12 @@ module.exports.colorPalette = {
     brandColor: 0x0077be
 };
 
+module.exports.actions = {
+    kick: 0,
+    mute: 1,
+    ban: 2
+};
+
 /**
  * Recursively read all files in a directory and its child directories.
  * @param {fs.PathLike} dirPath Path to the parent directory
