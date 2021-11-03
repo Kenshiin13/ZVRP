@@ -40,7 +40,7 @@ module.exports.run = async (interaction, utils) =>
 
     if (!member.manageable)
     {
-        embed.setDescription(`:x: | ${member} steht in der Hierachie über mir. Ich kann nichts gegehn ihn unternehmen.`);
+        embed.setDescription(`:x: | ${member} steht in der Hirachie über mir. Ich kann nichts gegehn ihn unternehmen.`);
         await interaction.editReply({ embeds: [embed] });
         return;
     }
