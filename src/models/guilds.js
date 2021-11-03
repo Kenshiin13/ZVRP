@@ -7,6 +7,16 @@ const guildSchema = new Schema({
         unique: true,
         required: true
     },
+    ip:
+    {
+        type: String,
+        required: true
+    },
+    port:
+    {
+        type: String,
+        required: true
+    },
     regelwerk:
     {
         type: String,
