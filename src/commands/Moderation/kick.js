@@ -45,8 +45,7 @@ module.exports.run = async (interaction, utils) =>
         return;
     }
 
-    await member.kick({ reason: reason });
-
+    await member.kick(reason);
     const newAction = new Action({
         type: actions.kick,
         guildId: currentGuild._id,
