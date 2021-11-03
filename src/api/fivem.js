@@ -2,31 +2,16 @@
 
 const fetch = require('node-fetch');
 
-async function getHost(ip)
-{
-    const split = ip.split(':')
-    return split[0];
-}
-
-async function getPort(ip)
-{
-    const split = ip.split(':')
-    if (split.length >= 2)
-    {
-        return split[1];
-    }
-}
-
 async function getServerStatus(ip)
 {
     return new Promise((sendSuccess, sendError) =>
     {
         fetch(`http://${ip}/info.json`).then((res) => res.json()).then((body) =>
         {
-            sendSuccess('online');
+            sendSuccess('Online');
         }).catch((err) =>
         {
-            sendSuccess('offline')
+            sendSuccess('Offline')
         });
     });
 }
@@ -144,8 +129,6 @@ async function getLicenseKey(ip)
 }
 
 module.exports = {
-    getHost: getHost,
-    getPort: getPort,
     getServerStatus: getServerStatus,
     getPlayers: getPlayers,
     getPlayersOnline: getPlayersOnline,
