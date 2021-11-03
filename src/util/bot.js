@@ -53,6 +53,12 @@ else
         console.log(green(`${++i}. Command: ${file.split('\\').pop().split('/').pop()} loaded!`)); //Strip absoulte path
         client.commands.set(props.data.name, props);
     });
+    client.commands.sort((a, b) =>
+    {
+        if (a.data.name < b.data.name)
+            return -1;
+        else return 1;
+    });
 }
 
 /* -- End Load Commands -- */
