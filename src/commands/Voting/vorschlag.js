@@ -48,7 +48,6 @@ module.exports.run = async (interaction, utils) =>
 
     embed.setAuthor(`${interaction.member.displayName}'s Vorschlag`, interaction.member.user.avatarURL({ format: "png" }))
         .setColor(colorPalette.brandColor)
-        .setFooter("Zero-V", interaction.client.user.avatarURL({ format: "png" }))
         .setDescription(vorschlag);
 
     const msg = await channel.send({ embeds: [embed] });

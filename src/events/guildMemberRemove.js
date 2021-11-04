@@ -30,7 +30,6 @@ module.exports.run = async (member) =>
     const embed = new MessageEmbed()
         .setAuthor("Zero-V Roleplay", member.client.user.avatarURL({ format: "png" }), "https://zero-v.de/")
         .setDescription(`${member} hat den Server verlassen.`)
-        .setFooter("Zero-V", member.client.user.avatarURL({ format: "png" }))
         .setColor(colorPalette.brandColor);
     await channel.send({ embeds: [embed] });
 };

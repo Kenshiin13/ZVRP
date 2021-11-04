@@ -37,7 +37,6 @@ module.exports.run = async (interaction, utils) =>
         return;
     }
 
-    embed.setFooter("Zero-V", interaction.client.user.avatarURL({ format: "png" }));
     embed.setDescription(`Hier findet ihr unser [Regelwerk](${currentGuild.regelwerk}).\n\nBitte bedenkt noch mal, das wir uns keiner RP Richtung zuwenden, sondern das Regelwerk dies entscheidet.`);
     await interaction.editReply({ embeds: [embed] });
 };
