@@ -3,6 +3,7 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { colorPalette } = require("../../util/util.js");
 const { CommandInteraction, Permissions, MessageEmbed } = require("discord.js");
+const { actions, getKeyByValue } = require("../../util/util.js");
 const Action = require("../../models/actions.js");
 
 module.exports.cooldown = {
@@ -26,9 +27,9 @@ module.exports.run = async (interaction, utils) =>
         .setColor(colorPalette.brandColor);
 
     const logs = await Action.find({ target: user.id })
-    if (!logs)
+    if (logs.length == 0)
     {
-        embed.setDescription(`:x: | Zu dem User ${user} wurden keine Moderationseinträge gefunden.`);
+        embed.setDescription(`Zu dem User ${user} wurden keine Moderationseinträge gefunden.`);
         await interaction.editReply({ embeds: [embed] });
         return;
     }
@@ -42,7 +43,7 @@ module.exports.run = async (interaction, utils) =>
 
     logs.forEach((entry, i) =>
     {
-        embed.setDescription(`${embed.description ?? ""}\n**${++i}. Eintrag**\nTyp: ${entry.type}\nUser: ${entry.target}\nModerator: ${entry.source}\nGrund: ${entry.reason}\n`);
+        embed.setDescription(`${embed.description ?? ""}\n**${++i}. Eintrag**\n**Typ:** ${getKeyByValue(actions, entry.type)}\n**User:** <@${entry.target}>\n**Moderator:** <@${entry.source}>\n**Grund:** ${entry.reason}\n`);
     });
 
     await interaction.editReply({ embeds: [embed] });
