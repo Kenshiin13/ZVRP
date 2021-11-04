@@ -50,3 +50,14 @@ module.exports.msToMinAndSec = function (ms)
     var seconds = ((ms % 60000) / 1000).toFixed(0);
     return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
 };
+
+/**
+ * Get an objects key by its value.
+ * @param {Object} object A JS object.
+ * @param {any} value The key to look for. 
+ * @returns 
+ */
+module.exports.getKeyByValue = function (object, value)
+{
+    return Object.keys(object).find(key => object[key] === value);
+}
