@@ -11,8 +11,8 @@ Still missing something? [Suggest a feature!](https://github.com/Kenshiin13/ZVRP
 - Custom Willkommensnachrichten ✅
 - `/status` RT Status des FiveM Servers ✅
 - Ban/Kick/Mute System ♻️
-- Fraktionssystem (Auflösungen, Strikes, Offiziell)
-- Embed Nachrichtensystem
+- Fraktionssystem (Auflösungen, Strikes, Offiziell) ✅
+- ~~Embed Nachrichtensystem~~
 
 
 ## Legende
