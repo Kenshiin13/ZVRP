@@ -91,7 +91,7 @@ module.exports.run = async (interaction, utils) =>
 
         const row = new MessageActionRow().addComponents([btnPrev, btnNext]);
         const message = await interaction.editReply({
-            embeds: [pages[pageCount].setFooter(`Page ${pageCount + 1} / ${pages.length}`)],
+            embeds: [pages[pageCount].setFooter(`Seite ${pageCount + 1} / ${pages.length}`)],
             components: [row]
         });
 

@@ -38,8 +38,7 @@ module.exports.run = async (interaction, utils) =>
         const maxPlayers = await getMaxPlayers(`${currentGuild.ip}:${currentGuild.port}`);
         const status = await getServerStatus(`${currentGuild.ip}:${currentGuild.port}`);
 
-        embed.setFooter("Zero-V", interaction.client.user.avatarURL({ format: "png" }))
-            .setTitle(`Zero-V ist akutell ${status}!`)
+        embed.setTitle(`Zero-V ist akutell ${status}!`)
             .setDescription(`**IP:** ${currentGuild.connect ?? ` /`}\n**Spieler:** ${players}/${maxPlayers}\n**TeamSpeak:** ${currentGuild.teamspeak ?? ` /`}`);
         await interaction.editReply({ embeds: [embed] });
     }
