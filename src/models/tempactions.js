@@ -1,5 +1,9 @@
 const { Schema, Types, model } = require("mongoose");
 
+/**
+ * TODO: Remove redundancies.
+ */
+
 const tempActionSchema = new Schema({
     type: /* kick/ban/mute */
     {
