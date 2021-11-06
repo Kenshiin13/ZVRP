@@ -15,6 +15,7 @@ module.exports.data =
  */
 module.exports.run = async (client) =>
 {
+    require("../setPermissions.js")(client); //only need this once
     console.log(yellow("✅ [INFO]: Bot is running."));
     console.log(white(`✅ [INFO]: Porting over: ${client.guilds.cache.size} guilds.`));
 };
