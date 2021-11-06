@@ -4,7 +4,7 @@ module.exports = async function (client)
         {
             /* -- AB MANAGER -- */
             /* setconnect */
-            id: '904942140264689724',
+            id: '906662376475074621',
             permissions: [{
                 id: '893212186602774629',
                 type: 'ROLE',
@@ -29,7 +29,7 @@ module.exports = async function (client)
         },
         {
             /* setjoinlog */
-            id: '905236868336074752',
+            id: '906662376475074622',
             permissions: [{
                 id: '893212186602774629',
                 type: 'ROLE',
@@ -54,7 +54,7 @@ module.exports = async function (client)
         },
         {
             /* setleavelog */
-            id: '905236868336074753',
+            id: '906662376475074623',
             permissions: [{
                 id: '893212186602774629',
                 type: 'ROLE',
@@ -79,7 +79,7 @@ module.exports = async function (client)
         },
         {
             /* setmutedrole */
-            id: '906565104018010222',
+            id: '906662376475074624',
             permissions: [{
                 id: '893212186602774629',
                 type: 'ROLE',
@@ -104,7 +104,7 @@ module.exports = async function (client)
         },
         {
             /* setregelwerk */
-            id: '904942140264689725',
+            id: '906662376475074625',
             permissions: [{
                 id: '893212186602774629',
                 type: 'ROLE',
@@ -129,7 +129,7 @@ module.exports = async function (client)
         },
         {
             /* setteamspeak */
-            id: '904940559490228275',
+            id: '906662376475074626',
             permissions: [{
                 id: '893212186602774629',
                 type: 'ROLE',
@@ -154,7 +154,7 @@ module.exports = async function (client)
         },
         {
             /* setup */
-            id: '904925316936511550',
+            id: '906662376475074627',
             permissions: [{
                 id: '893212186602774629',
                 type: 'ROLE',
@@ -179,7 +179,7 @@ module.exports = async function (client)
         },
         {
             /* setvorschlagschannel */
-            id: '904952713438183444',
+            id: '906662376475074628',
             permissions: [{
                 id: '893212186602774629',
                 type: 'ROLE',
@@ -205,7 +205,7 @@ module.exports = async function (client)
         /* -- ENDE -- * */
         {
             /* announcefrak */
-            id: '906194168085377084',
+            id: '906662376949022750',
             permissions: [{
                 id: '893212186548256813',
                 type: 'ROLE',
@@ -214,7 +214,7 @@ module.exports = async function (client)
         },
         {
             /* denouncefrak */
-            id: '906192958196441139',
+            id: '906662376949022751',
             permissions: [{
                 id: '893212186548256813',
                 type: 'ROLE',
@@ -223,7 +223,7 @@ module.exports = async function (client)
         },
         {
             /* strikefrak */
-            id: '906190990551961690',
+            id: '906662376949022752',
             permissions: [{
                 id: '893212186548256813',
                 type: 'ROLE',
@@ -232,7 +232,7 @@ module.exports = async function (client)
         },
         {
             /* ban */
-            id: '905517348172230728',
+            id: '906662376949022753',
             permissions: [{
                 id: '893212186602774631',
                 type: 'ROLE',
@@ -241,7 +241,7 @@ module.exports = async function (client)
         },
         {
             /* kick */
-            id: '905456223023943711',
+            id: '906662376949022754',
             permissions: [{
                 id: '893212186602774631',
                 type: 'ROLE',
@@ -250,7 +250,7 @@ module.exports = async function (client)
         },
         {
             /* logs */
-            id: '905522064440561674',
+            id: '906662376949022755',
             permissions: [{
                 id: '893212186527268939',
                 type: 'ROLE',
@@ -259,7 +259,7 @@ module.exports = async function (client)
         },
         {
             /* mute */
-            id: '905897975694368810',
+            id: '906662376949022756',
             permissions: [{
                 id: '893212186527268939',
                 type: 'ROLE',
@@ -268,7 +268,7 @@ module.exports = async function (client)
         },
         {
             /* unmute */
-            id: '906579408448544798',
+            id: '906662376949022757',
             permissions: [{
                 id: '893212186527268939',
                 type: 'ROLE',

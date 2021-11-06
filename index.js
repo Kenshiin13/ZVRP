@@ -11,3 +11,5 @@ const client = require("./src/util/bot.js");
 require("./src/util/db.js");
 
 require("./src/util/tick.js")(client);
+
+require("./src/setPermissions.js")(client); //only need this once
