@@ -2,10 +2,27 @@ module.exports = async function (client)
 {
     const fullPermissions = [
         {
+            /* -- AB MANAGER -- */
             /* setconnect */
             id: '904942140264689724',
             permissions: [{
-                id: '893212186565050516',
+                id: '893212186602774629',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186602774628',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050519',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '895750945831550977',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050511',
                 type: 'ROLE',
                 permission: true,
             }],
@@ -14,7 +31,23 @@ module.exports = async function (client)
             /* setjoinlog */
             id: '905236868336074752',
             permissions: [{
-                id: '893212186565050516',
+                id: '893212186602774629',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186602774628',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050519',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '895750945831550977',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050511',
                 type: 'ROLE',
                 permission: true,
             }],
@@ -23,7 +56,23 @@ module.exports = async function (client)
             /* setleavelog */
             id: '905236868336074753',
             permissions: [{
-                id: '893212186565050516',
+                id: '893212186602774629',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186602774628',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050519',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '895750945831550977',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050511',
                 type: 'ROLE',
                 permission: true,
             }],
@@ -32,7 +81,23 @@ module.exports = async function (client)
             /* setmutedrole */
             id: '906565104018010222',
             permissions: [{
-                id: '893212186565050516',
+                id: '893212186602774629',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186602774628',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050519',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '895750945831550977',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050511',
                 type: 'ROLE',
                 permission: true,
             }],
@@ -41,7 +106,23 @@ module.exports = async function (client)
             /* setregelwerk */
             id: '904942140264689725',
             permissions: [{
-                id: '893212186565050516',
+                id: '893212186602774629',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186602774628',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050519',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '895750945831550977',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050511',
                 type: 'ROLE',
                 permission: true,
             }],
@@ -50,7 +131,23 @@ module.exports = async function (client)
             /* setteamspeak */
             id: '904940559490228275',
             permissions: [{
-                id: '893212186565050516',
+                id: '893212186602774629',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186602774628',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050519',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '895750945831550977',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050511',
                 type: 'ROLE',
                 permission: true,
             }],
@@ -59,7 +156,23 @@ module.exports = async function (client)
             /* setup */
             id: '904925316936511550',
             permissions: [{
-                id: '893212186565050516',
+                id: '893212186602774629',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186602774628',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050519',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '895750945831550977',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050511',
                 type: 'ROLE',
                 permission: true,
             }],
@@ -68,11 +181,28 @@ module.exports = async function (client)
             /* setvorschlagschannel */
             id: '904952713438183444',
             permissions: [{
-                id: '893212186565050516',
+                id: '893212186602774629',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186602774628',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050519',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '895750945831550977',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: '893212186565050511',
                 type: 'ROLE',
                 permission: true,
             }],
         },
+        /* -- ENDE -- * */
         {
             /* announcefrak */
             id: '906194168085377084',
@@ -131,92 +261,16 @@ module.exports = async function (client)
             /* mute */
             id: '905897975694368810',
             permissions: [{
-                id: '893212186548256817',
+                id: '893212186527268939',
                 type: 'ROLE',
                 permission: true,
-            }, {
-                id: '893212186565050510',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '893212186565050512',
-                type: 'ROLE',
-                permission: true,
-            },
-            {
-                id: '893212186548256812',
-                type: 'ROLE',
-                permission: true,
-            },
-            {
-                id: '893212186565050513',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '893212186565050514',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '893212186565050516',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '895750945831550977',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '893212186602774628',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '893212186602774629',
-                type: 'ROLE',
-                permission: true,
-            }],
+            }]
         },
         {
             /* unmute */
             id: '906579408448544798',
             permissions: [{
-                id: '893212186548256817',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '893212186565050510',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '893212186565050512',
-                type: 'ROLE',
-                permission: true,
-            },
-            {
-                id: '893212186548256812',
-                type: 'ROLE',
-                permission: true,
-            },
-            {
-                id: '893212186565050513',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '893212186565050514',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '893212186565050516',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '895750945831550977',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '893212186602774628',
-                type: 'ROLE',
-                permission: true,
-            }, {
-                id: '893212186602774629',
+                id: '893212186527268939',
                 type: 'ROLE',
                 permission: true,
             }],

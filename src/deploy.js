@@ -12,7 +12,7 @@ const { green, yellow } = require("colors/safe");
 const local = true; /* Change to false to deploy global commands */
 
 const clientId = "904821099815124993"; /* Change clientId */
-const guildId = "889234462884372520"; /* Change guildId (for local commands) */
+const guildId = "893212186506321950"; /* Change guildId (for local commands) */
 const commands = [];
 
 const commandFiles = getAllFilesSync(path.join(__dirname, "./commands"));
