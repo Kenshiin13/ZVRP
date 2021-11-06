@@ -57,10 +57,11 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.ADMINISTRATOR
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
     .setName("setleavelog")
     .setDescription("Wählt den Textkanal, in dem Verabschiedungsnachrichten für den Server verschickt werden.")
-    .addChannelOption(option => option.setName("textkanal").setDescription("Der Textkanal, in dem die Verabschiedungsnachrichten verschickt werden.").setRequired(true));
+    .addChannelOption(option => option.setName("textkanal").setDescription("Der Textkanal, in dem die Verabschiedungsnachrichten verschickt werden.").setRequired(true))
+    .setDefaultPermission(false);

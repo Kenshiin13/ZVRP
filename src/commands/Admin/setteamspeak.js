@@ -50,10 +50,12 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.MANAGE_ROLES | Permissions.FLAGS.MANAGE_CHANNELS
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
     .setName("setteamspeak")
     .setDescription("Hinterlegt einen TeamSpeak Server.")
-    .addStringOption(option => option.setName("ip").setDescription("Die TeamSpeak Server IP.").setRequired(true));
+    .addStringOption(option => option.setName("ip").setDescription("Die TeamSpeak Server IP.").setRequired(true))
+    .setDefaultPermission(false);
+

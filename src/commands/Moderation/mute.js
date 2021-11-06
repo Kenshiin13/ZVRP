@@ -123,8 +123,8 @@ module.exports.run = async (interaction, utils) =>
 };
 
 module.exports.permissions = {
-    clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.MUTE_MEMBERS
+    clientPermissions: Permissions.FLAGS.SEND_MESSAGES | Permissions.FLAGS.MANAGE_ROLES,
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
@@ -134,5 +134,7 @@ module.exports.data = new SlashCommandBuilder()
     .addStringOption(option => option.setName("grund").setDescription("Der Grund für den Mute.").setRequired(false))
     .addIntegerOption(option => option.setName("tage").setDescription("Wieviele Tage der Nutzer gemuted werden soll.").setRequired(false))
     .addIntegerOption(option => option.setName("stunden").setDescription("Wieviele Stunden der Nutzer gemuted werden soll.").setRequired(false))
-    .addIntegerOption(option => option.setName("minuten").setDescription("Wieviele Minuten der Nutzer gemuted werden soll.").setRequired(false));
+    .addIntegerOption(option => option.setName("minuten").setDescription("Wieviele Minuten der Nutzer gemuted werden soll.").setRequired(false))
+    .setDefaultPermission(false);
+
 

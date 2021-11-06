@@ -57,10 +57,11 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.ADMINISTRATOR
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
     .setName("setjoinlog")
     .setDescription("Wählt den Textkanal, in dem Willkommensnachrichten für den Server verschickt werden.")
-    .addChannelOption(option => option.setName("textkanal").setDescription("Der Textkanal, in dem die Willkommensnachricht verschickt werden.").setRequired(true));
+    .addChannelOption(option => option.setName("textkanal").setDescription("Der Textkanal, in dem die Willkommensnachricht verschickt werden.").setRequired(true))
+    .setDefaultPermission(false);

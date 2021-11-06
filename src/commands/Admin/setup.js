@@ -70,8 +70,8 @@ module.exports.run = async (interaction, utils) =>
 };
 
 module.exports.permissions = {
-    clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.ADMINISTRATOR
+    clientPermissions: Permissions.FLAGS.SEND_MESSAGES | Permissions.FLAGS.KICK_MEMBERS | Permissions.FLAGS.BAN_MEMBERS | Permissions.FLAGS.MANAGE_ROLES | Permissions.FLAGS.EMBED_LINKS | Permissions.FLAGS.ADD_REACTIONS,
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
@@ -81,4 +81,6 @@ module.exports.data = new SlashCommandBuilder()
     .addStringOption(option => option.setName("port").setDescription("Der Port des FiveM Servers. Standardwert: 30120").setRequired(false))
     .addStringOption(option => option.setName("regelwerk").setDescription("Ein Link zum Regelwerk.").setRequired(false))
     .addStringOption(option => option.setName("teamspeak").setDescription("Ein Link zum Teamspeak Server.").setRequired(false))
-    .addStringOption(option => option.setName("connect").setDescription("Der Connect Link für den Server.").setRequired(false));
+    .addStringOption(option => option.setName("connect").setDescription("Der Connect Link für den Server.").setRequired(false))
+    .setDefaultPermission(false);
+

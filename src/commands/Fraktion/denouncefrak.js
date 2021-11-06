@@ -44,7 +44,7 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.SEND_MESSAGES | Permissions.FLAGS.MANAGE_CHANNELS | Permissions.FLAGS.MANAGE_ROLES
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
@@ -53,4 +53,6 @@ module.exports.data = new SlashCommandBuilder()
     .addStringOption(option => option.setName("fraktion").setDescription("Die Fraktion, die aufgelöst werden soll.").setRequired(true))
     .addStringOption(option => option.setName("grund").setDescription("Der Grund für die Auflösung.").setRequired(true))
     .addChannelOption(option => option.setName("channel").setDescription("Der Channel, in dem die Auflösung angekündigt wird.").setRequired(true))
-    .addMentionableOption(option => option.setName("rolle").setDescription("Die Rolle, die gepinged werden soll (Frakverwaltung).").setRequired(true));
+    .addMentionableOption(option => option.setName("rolle").setDescription("Die Rolle, die gepinged werden soll (Frakverwaltung).").setRequired(true))
+    .setDefaultPermission(false);
+

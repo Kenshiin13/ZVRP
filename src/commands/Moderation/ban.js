@@ -61,11 +61,13 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES | Permissions.FLAGS.BAN_MEMBERS,
-    userPermissions: Permissions.FLAGS.SEND_MESSAGES | Permissions.FLAGS.BAN_MEMBERS
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
     .setName("ban")
     .setDescription("Bannt einen Nutzer vom Server.")
     .addUserOption(option => option.setName("user").setDescription("Der Nutzer, der vom Server gebannt wird.").setRequired(true))
-    .addStringOption(option => option.setName("grund").setDescription("Gibt den Grund für den Bann an.").setRequired(false));
+    .addStringOption(option => option.setName("grund").setDescription("Gibt den Grund für den Bann an.").setRequired(false))
+    .setDefaultPermission(false);
+

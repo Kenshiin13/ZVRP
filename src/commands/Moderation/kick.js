@@ -60,11 +60,13 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES | Permissions.FLAGS.KICK_MEMBERS,
-    userPermissions: Permissions.FLAGS.SEND_MESSAGES | Permissions.FLAGS.KICK_MEMBERS
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
     .setName("kick")
     .setDescription("Kickt einen Nutzer vom Server.")
     .addUserOption(option => option.setName("user").setDescription("Der Nutzer, der vom Server gekickt wird.").setRequired(true))
-    .addStringOption(option => option.setName("grund").setDescription("Gibt den Grund für den Kick an.").setRequired(false));
+    .addStringOption(option => option.setName("grund").setDescription("Gibt den Grund für den Kick an.").setRequired(false))
+    .setDefaultPermission(false);
+

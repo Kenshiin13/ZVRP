@@ -50,10 +50,11 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.MANAGE_ROLES | Permissions.FLAGS.MANAGE_CHANNELS
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
     .setName("setconnect")
     .setDescription("Hinterlegt einen FiveM Connect Link.")
-    .addStringOption(option => option.setName("link").setDescription("Der FiveM Connect Link.").setRequired(true));
+    .addStringOption(option => option.setName("link").setDescription("Der FiveM Connect Link.").setRequired(true))
+    .setDefaultPermission(false);

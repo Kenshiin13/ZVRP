@@ -56,10 +56,12 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.MANAGE_ROLES | Permissions.FLAGS.MANAGE_CHANNELS
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
     .setName("setvorschlagschannel")
     .setDescription("Wählt den Textkanal, in dem Vorschläge für den Server abgegeben werden können.")
-    .addChannelOption(option => option.setName("textkanal").setDescription("Der Textkanal, in dem die Vorschläge veröffentlich werden.").setRequired(true));
+    .addChannelOption(option => option.setName("textkanal").setDescription("Der Textkanal, in dem die Vorschläge veröffentlich werden.").setRequired(true))
+    .setDefaultPermission(false);
+

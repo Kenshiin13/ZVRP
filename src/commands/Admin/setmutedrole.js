@@ -55,10 +55,11 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.MANAGE_ROLES | Permissions.FLAGS.MANAGE_CHANNELS
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
     .setName("setmutedrole")
     .setDescription("Legt die Rolle fest, die ein gemuted User bekommt.")
-    .addRoleOption(option => option.setName("rolle").setDescription("Wähle die Rolle aus, die ein muted User bekommt.").setRequired(true));
+    .addRoleOption(option => option.setName("rolle").setDescription("Wähle die Rolle aus, die ein muted User bekommt.").setRequired(true))
+    .setDefaultPermission(false);

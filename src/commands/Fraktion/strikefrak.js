@@ -46,7 +46,7 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.SEND_MESSAGES | Permissions.FLAGS.MANAGE_CHANNELS | Permissions.FLAGS.MANAGE_ROLES
+    userPermissions: Permissions.FLAGS.SEND_MESSAGES
 };
 
 module.exports.data = new SlashCommandBuilder()
@@ -57,4 +57,6 @@ module.exports.data = new SlashCommandBuilder()
     .addIntegerOption(option => option.setName("strikecount").setDescription("Die Anzahl an Strikes, die die Fraktion inkl. diesem Strike hat.").setRequired(true))
     .addNumberOption(option => option.setName("länge").setDescription("Die Länge in Tagen, bis der Strike verschwindet.").setRequired(true))
     .addChannelOption(option => option.setName("channel").setDescription("Der Channel, in dem der Strike ausgesprochen wird.").setRequired(true))
-    .addMentionableOption(option => option.setName("rolle").setDescription("Die Rolle, die gepinged werden soll (Frakverwaltung).").setRequired(true));
+    .addMentionableOption(option => option.setName("rolle").setDescription("Die Rolle, die gepinged werden soll (Frakverwaltung).").setRequired(true))
+    .setDefaultPermission(false);
+

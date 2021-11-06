@@ -51,10 +51,12 @@ module.exports.run = async (interaction, utils) =>
 
 module.exports.permissions = {
     clientPermissions: Permissions.FLAGS.SEND_MESSAGES,
-    userPermissions: Permissions.FLAGS.MANAGE_ROLES | Permissions.FLAGS.MANAGE_CHANNELS
+    userPermissions: Permissions.FLAGS.MANAGE_ROLES
 };
 
 module.exports.data = new SlashCommandBuilder()
     .setName("logs")
     .setDescription("Zeigt die Moderations Logs von einem Nutzer an.")
-    .addUserOption(option => option.setName("user").setDescription("Der Nutzer, von dem die Logs abgerufen werden sollen.").setRequired(true));
+    .addUserOption(option => option.setName("user").setDescription("Der Nutzer, von dem die Logs abgerufen werden sollen.").setRequired(true))
+    .setDefaultPermission(false);
+
