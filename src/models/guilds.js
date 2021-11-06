@@ -46,6 +46,11 @@ const guildSchema = new Schema({
     {
         type: String,
         required: false
+    },
+    mutedrole:
+    {
+        type: String,
+        required: false
     }
 }, { timestamps: true });
 
