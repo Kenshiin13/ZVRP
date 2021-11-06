@@ -276,7 +276,6 @@ module.exports = async function (client)
             }],
         },
     ];
-    await client.guilds.cache.get("893212186506321950")?.commands.permissions.set({});
 
     await client.guilds.cache.get("893212186506321950")?.commands.permissions.set({ fullPermissions });
 };
