@@ -7,7 +7,7 @@ const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 console.log(cyan("Connecting to Database . . ."));
-connect("mongodb://localhost/development-zvrp").then(() =>
+connect("mongodb://localhost/production-zvrp").then(() =>
 {
     console.log(green("Successfully connected to database."));
 }).catch((err) => console.error(red(err)));
