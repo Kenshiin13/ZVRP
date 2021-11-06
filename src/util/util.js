@@ -15,7 +15,8 @@ module.exports.colorPalette = {
 module.exports.actions = {
     kick: 0,
     mute: 1,
-    ban: 2
+    ban: 2,
+    unmute: 3
 };
 
 /**
