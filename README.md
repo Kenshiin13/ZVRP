@@ -10,7 +10,7 @@ Still missing something? [Suggest a feature!](https://github.com/Kenshiin13/ZVRP
 - `/help <command?>` Hilfemenü zu allen Befehelen, alternativ zu einem einzelnen Befehl ✅
 - Custom Willkommensnachrichten ✅
 - `/status` RT Status des FiveM Servers ✅
-- Ban/Kick/Mute System ♻️
+- Ban/Kick/Mute System ✅
 - Fraktionssystem (Auflösungen, Strikes, Offiziell) ✅
 - ~~Embed Nachrichtensystem~~
 
