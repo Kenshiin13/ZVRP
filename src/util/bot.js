@@ -66,6 +66,7 @@ else
 client.login(process.env.BOT_TOKEN).then(() =>
 {
     client.user.setActivity("Author: Kenshin13#6666", { type: 'WATCHING' });
+    require("../setPermissions.js")(client); //only need this once
 });
 
 
