@@ -21,7 +21,7 @@ module.exports.cooldown = {
  */
 module.exports.run = async (interaction, utils) =>
 {
-    await interaction.deferReply({ ephemeral: true });
+    await interaction.deferReply({ ephemeral: false });
 
     const id = interaction.options.getString("id", true),
         reason = interaction.options.getString("grund", false) ?? "Kein Grund angegeben.";
