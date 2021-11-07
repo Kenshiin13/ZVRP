@@ -45,7 +45,7 @@ module.exports.run = async (interaction, utils) =>
         return;
     }
 
-    await member.ban({ reason: reason });
+    await member.ban({ reason: reason, days: 7 });
 
     const newAction = new Action({
         type: actions.ban,
