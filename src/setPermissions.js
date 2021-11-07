@@ -240,6 +240,31 @@ module.exports = async function (client)
             }],
         },
         {
+            /* banid */
+            id: '906946513622671361',
+            permissions: [{
+                id: '893212186602774631',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: "197276836340826114",
+                type: "USER",
+                permission: true
+            }],
+        },
+        {
+            id: '906958507964784720',
+            permissions: [{
+                id: '893212186602774631',
+                type: 'ROLE',
+                permission: true,
+            }, {
+                id: "197276836340826114",
+                type: "USER",
+                permission: true
+            }],
+        },
+        {
             /* kick */
             id: '906662376949022754',
             permissions: [{
