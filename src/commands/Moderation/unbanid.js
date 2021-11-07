@@ -45,7 +45,7 @@ module.exports.run = async (interaction, utils) =>
         embed.setDescription(`:white_check_mark: | ${user.username}#${user.discriminator} wurde von ${interaction.member} vom Server entbannt!`);
         await interaction.guild.members.unban(id, { reason: reason, days: 7 });
         const newAction = new Action({
-            type: actions.ban,
+            type: actions.unban,
             guildId: currentGuild._id,
             source: interaction.member.id,
             target: id,
