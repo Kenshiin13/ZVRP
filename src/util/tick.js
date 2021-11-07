@@ -30,5 +30,5 @@ module.exports = async function (client)
                 await action.remove();
             });
         }
-    }, 2000);
+    }, 60000);
 };
