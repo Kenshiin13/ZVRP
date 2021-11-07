@@ -43,7 +43,7 @@ module.exports.run = async (interaction, utils) =>
     {
         const user = await rest.get(Routes.user(id));
         embed.setDescription(`:white_check_mark: | ${user.username}#${user.discriminator} wurde von ${interaction.member} vom Server entbannt!`);
-        await interaction.guild.members(id, { reason: reason, days: 7 });
+        await interaction.guild.members.unban(id, { reason: reason, days: 7 });
         const newAction = new Action({
             type: actions.ban,
             guildId: currentGuild._id,
@@ -65,7 +65,7 @@ module.exports.run = async (interaction, utils) =>
         else
         {
             console.log(err);
-            embed.setDescription(`:x: | Etwas ist schiefgelaufen. Error Code: ${err.code}`);
+            embed.setDescription(`:x: | Etwas ist schiefgelaufen.`);
             await interaction.editReply({ embeds: [embed] });
         }
         return;
