@@ -27,7 +27,7 @@ module.exports = async function (client)
                         client.guilds.cache.get(action.guildId.id).members.fetch(action.target).then((member) =>
                         {
                             if (action.guildId.mutedrole)
-                                await member.roles.remove(action.guildId.mutedrole);
+                                member.roles.remove(action.guildId.mutedrole);
                         });
                     }
 
