@@ -24,9 +24,11 @@ module.exports = async function (client)
                 {
                     if (action.type == actions.mute)
                     {
-                        const member = await client.guilds.cache.get(action.guildId.id).members.fetch(action.target);
-                        if (action.guildId.mutedrole)
-                            await member.roles.remove(action.guildId.mutedrole);
+                        client.guilds.cache.get(action.guildId.id).members.fetch(action.target).then((member) =>
+                        {
+                            if (action.guildId.mutedrole)
+                                await member.roles.remove(action.guildId.mutedrole);
+                        });
                     }
 
                     await action.remove();
